@@ -65,7 +65,7 @@ p {
 }
 
 .title {
-    margin-bottom: 50px;
+    padding-bottom: 50px;
     text-align: center;
 }
 
@@ -100,7 +100,7 @@ p {
  /* /header-logo/ */
 .logo-header {
     /* font */
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
@@ -222,6 +222,8 @@ p {
 
     margin-bottom: 30px;
 
+    text-transform: uppercase;
+
 
     
 }
@@ -264,9 +266,7 @@ p {
     /* color */
     color: var(--main-text-color);
 
-    margin-top: 0px;
-
-    visibility: hidden;
+    content-visibility: hidden;
 
     
 }
@@ -288,7 +288,6 @@ p {
     /* color */
     color: var(--main-text-color);
 
-    margin-top: 10px;
     margin-bottom: 10px;
 }
 .feature .text {
@@ -322,15 +321,14 @@ p {
 
 .employment .list {
     display: flex;
+    gap: 30px;
 }
 .employment .item {
     display: block;
     align-items: center;
 }
 
-.employment .image:not(:last-child) {
-    margin-right: 30px;
-}
+
 
 
 /* -------team------- */
@@ -351,6 +349,7 @@ p {
 
 .team .list {
     display: flex;
+    gap: 30px;
 }
 
 .team .card {
@@ -359,11 +358,12 @@ p {
     width: 270px;
 
     text-align: center;
+
+    border-radius: 0 0 4px 4px;
+
 }
 
-.team .card:not(:last-child) {
-    margin-right: 30px;
-}
+
 
 .team .image {
     display: block;
@@ -415,7 +415,7 @@ p {
 }
 .logo-footer {
     /* font */
-    font-family: 'Raleway' sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
@@ -470,7 +470,7 @@ p {
     /* color */
     color: var(--main-text-color);
 
-    visibility: hidden;
+    content-visibility: hidden;
 
 }
 
@@ -512,8 +512,8 @@ p {
 .button .name:hover {
     color: var(--background-color)
 }
-.button-list .item:not(:last-child) {
-    margin-right: 8px;
+.button-list {
+    gap: 8px;
 }
 .button-list {
     margin-bottom: 50px;
@@ -523,6 +523,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 30px;
 }
 
 .projects .item {
@@ -532,16 +533,7 @@ p {
     border-left: 1px solid var(--project-section-back);
     border-right: 1px solid var(--project-section-back);
 
-    margin-right: 30px;
-    margin-bottom: 30px;
-
 }
-
-.projects .item:nth-child(3n) {
-    margin-right: 0px;
-} 
-
-
 
 .projects .image {
     display: block;
@@ -563,6 +555,8 @@ p {
     /* color */
     color: var(--main-text-color);
     background-color: var(--third-text-color);
+
+    margin-bottom: 4px;
 }
 
 .projects .description {
