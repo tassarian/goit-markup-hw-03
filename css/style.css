@@ -164,7 +164,8 @@ p {
 }
 
 .navigation .nav-link:hover,
-.navigation .nav-link:focus {
+.navigation .nav-link:focus,
+.navigation .nav-link:active {
     /* color */
     color: var(--project-color);
 }
