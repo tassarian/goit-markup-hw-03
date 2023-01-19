@@ -69,6 +69,19 @@ p {
     text-align: center;
 }
 
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
 
 /* header */
 
@@ -235,6 +248,7 @@ p {
     /* cursor */
     cursor: pointer;
     /* font */
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.8;
@@ -265,10 +279,6 @@ p {
     letter-spacing: 0.03em;
     /* color */
     color: var(--main-text-color);
-
-    content-visibility: hidden;
-
-    
 }
 
 .feature .list {
@@ -469,9 +479,6 @@ p {
     letter-spacing: 0.06em;
     /* color */
     color: var(--main-text-color);
-
-    content-visibility: hidden;
-
 }
 
 .portfolio .button-list {
@@ -481,6 +488,7 @@ p {
 
 .button {
     /* font */
+    font-family: inherit;
     font-weight: bold;
     font-size: 16px;
     line-height: 1.6;
